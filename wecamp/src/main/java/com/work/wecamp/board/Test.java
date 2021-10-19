@@ -1,4 +1,4 @@
-package com.work.wecamp.board;
+package com.work.wecamp.camp;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,7 +8,9 @@ public class Test {
 	
 	@GetMapping("/test")
 	public String testA() {
-		return "test";
+
+		return "test입니다";
+
 	}
 
 }
