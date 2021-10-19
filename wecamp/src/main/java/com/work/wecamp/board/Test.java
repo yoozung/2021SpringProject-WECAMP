@@ -1,4 +1,4 @@
-package com.work.wecamp.board;
+package com.work.wecamp.camp;
 
 public class Test {
 
