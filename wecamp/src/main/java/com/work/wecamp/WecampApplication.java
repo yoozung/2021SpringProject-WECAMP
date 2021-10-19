@@ -1,4 +1,4 @@
-package com.org.wecamp;
+package com.work.wecamp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
