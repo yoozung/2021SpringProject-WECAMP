@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.work.wecamp.camp.dao.CampDao">
+
+<insert id="insertCampsite">
+	INSERT INTO campsite
+		(campsite_no,faclt_nm,line_intro,detail_intro,induty,
+		lct_cl,do_nm,sigungu,zipcode,addr1,addr2,lon,lat,tel,homepage,resve_url,
+		glamp_inner,caravan_inner,operation_p,operation_d,trler_yn,carav_yn,
+		sbrs_cl,sbrs_etc,posbl_fcl,thema_env,animal_cmg,thumbnail)
+		VALUES(
+				#{campsiteNo},
+				#{facltNm},
+				#{lineIntro},
+				#{detailIntro},
+				#{induty},
+				#{lctCl},
+				#{doNm},
+				#{sigungu},
+				#{zipcode},
+				#{addr1},
+				#{addr2},
+				#{lon},
+				#{lat},
+				#{tel},
+				#{homepage},
+				#{resveUrl},
+				#{glampInner},
+				#{caravanInner},
+				#{operationP},
+				#{operationD},
+				#{trlerYn},
+				#{caravYn},
+				#{sbrsCl},
+				#{sbrsEtc},
+				#{posblFcl},
+				#{themaEnv},
+				#{animalCmg},
+				#{thumbnail}
+			)
+</insert>
+
+<select id="selectSigungu" resultType="map" parameterType="string">
+	SELECT sigungu,TO_CHAR(count(sigungu)) sigungu_count
+	FROM campsite 
+	GROUP BY do_nm,sigungu
+	HAVING do_nm = #{doNm}
+	ORDER BY sigungu
+</select>
+
+
+<select id="totalCount" resultType="int" parameterType="hashMap">
+SELECT COUNT(campsite_no) 
+FROM campsite WHERE 1=1
+
+<if test="doNm != null and doNm != ''">
+    AND do_nm = #{doNm}
+</if>
+            
+<if test="sigungu != null and sigungu != ''">
+    AND sigungu = #{sigungu}
+</if>
+
+<if test="campThema != null">
+	AND 
+	<foreach collection="campThema" item="campThema" open="(" close=")" separator="or">
+		thema_env like '%'||#{campThema}||'%'
+	</foreach>
+</if>
+
+<if test="campType != null">
+	AND 
+	<foreach collection="campType" item="campType" open="(" close=")" separator="or">
+		induty like '%'||#{campType}||'%'
+	</foreach>
+</if>
+
+<if test="campSbrs != null">
+	AND 
+	<foreach collection="campSbrs" item="campSbrs" open="(" close=")" separator="or">
+		sbrs_cl like '%'||#{campSbrs}||'%'
+	</foreach>
+</if>
+
+<if test="campLct != null">
+	AND 
+	<foreach collection="campLct" item="campLct" open="(" close=")" separator="or">
+		lct_cl like '%'||#{campLct}||'%'
+	</foreach>
+</if>
+
+<if test="campEtc != null">
+	AND 
+	<foreach collection="campEtc" item="campEtc" open="(" close=")" separator="or">
+		animal_cmg like #{campEtc}||'%'
+	</foreach>
+</if>
+
+
+</select>
+
+<select id="selectCampsiteAll" resultType="map" parameterType="hashMap">
+SELECT  X.*
+FROM
+	(
+        SELECT ROWNUM as rnum,A.*
+        FROM
+        (
+            SELECT * 
+            FROM campsite WHERE 1=1
+            <if test="doNm != null and doNm != ''">
+
+            	 AND do_nm = #{doNm}
+            </if>
+            
+            <if test="sigungu != null and sigungu != ''">
+            	AND sigungu = #{sigungu}
+            </if>
+            
+            <if test="campThema != null">
+	AND 
+	<foreach collection="campThema" item="campThema" open="(" close=")" separator="or">
+		thema_env like '%'||#{campThema}||'%'
+	</foreach>
+	</if>
+	
+	<if test="campType != null">
+		AND 
+		<foreach collection="campType" item="campType" open="(" close=")" separator="or">
+			induty like '%'||#{campType}||'%'
+		</foreach>
+	</if>
+	
+	<if test="campSbrs != null">
+		AND 
+		<foreach collection="campSbrs" item="campSbrs" open="(" close=")" separator="or">
+			sbrs_cl like '%'||#{campSbrs}||'%'
+		</foreach>
+	</if>
+	
+	<if test="campLct != null">
+		AND 
+		<foreach collection="campLct" item="campLct" open="(" close=")" separator="or">
+			lct_cl like '%'||#{campLct}||'%'
+		</foreach>
+	</if>
+	
+	<if test="campEtc != null">
+		AND 
+		<foreach collection="campEtc" item="campEtc" open="(" close=")" separator="or">
+			animal_cmg like #{campEtc}||'%'
+		</foreach>
+	</if>
+       
+            ORDER BY campsite_no DESC) A
+        WHERE <![CDATA[ROWNUM <= #{endCount}]]>) X
+WHERE <![CDATA[X.rnum >= #{startCount}]]>	
+</select>		
+
+</mapper>

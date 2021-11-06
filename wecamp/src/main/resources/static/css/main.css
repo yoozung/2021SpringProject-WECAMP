@@ -1,0 +1,229 @@
+@charset "UTF-8";
+body{
+	overflow: hidden;
+}
+
+#main-container{
+   width: 100%;
+   height: 100vh;
+   background-image:
+   linear-gradient(rgba(0,0,0,0.7),
+                   rgba(0,0,0,0.7)),url(/img/main/campImg.jpg);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.t-navbar{
+    height:12% ;
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.header-logo{
+    width:150px;
+    font-size : 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 800;
+    color : #fff;
+}
+.menu-icon{
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.header-nav{
+    flex:1;
+    text-align: right;;
+}
+.header-nav a{
+    color : #fff;
+    font-size: 13px;
+    display: inline-block;
+    padding:10px;
+}
+.header-nav ul li{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.header-nav ul li:hover a{
+    background:#fff;
+    border-radius: 10px;
+    color : #000;
+}
+
+
+/*row1---------------------------------------------*/
+#main-container .row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+    padding-left: 6%;
+    padding-right: 1%;
+}
+
+#main-container .row .col{
+    flex-basis:50%;
+    color : #fff;
+}
+.col.t-col{
+	margin-left : 50px;
+}
+#main-container .col:nth-child(1){
+	margin-bottom: 135px;
+	margin-left : 30px;
+}
+#main-container .col:nth-child(1) h1{
+    font-size: 85px;
+    font-weight: 600;
+    margin-bottom : 20px;
+    
+}
+#main-container .col:nth-child(1) p{
+    font-size : 23px;
+    line-height: 40px;
+    font-weight: 400;
+}
+#main-container .col:nth-child(1) button{
+    width:180px;
+    color : #000;
+    font-size: 12px;
+    padding : 12px 0;
+    background:#fff;
+    border:0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    font-weight: 500;
+    cursor : pointer;
+}
+
+/*row2---------------------------------------------*/
+.card{
+    width:270px;
+    height: 290px;
+
+    border-radius: 10px;
+    padding : 15px 25px;
+    cursor : pointer;
+    margin : 20px 30px;
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+
+
+    background-position: center;
+    background-size : cover;  
+}
+.card1{
+    background-image: url(/img/main/일반.jpg);
+}
+.card2{
+    background-image: url(/img/main/car-camp.jpg);
+}
+.card3{
+    background-image: url(/img/main/glamping.jpg);
+}
+.card4{
+    background-image: url(/img/main/caravan.jpg);
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.card h5{
+    color : #fff;
+    text-shadow: 0 0 15px #999;
+    font-weight: 600;
+    font-size : 20px;
+}
+
+.card-box{
+    display: flex;
+    width: 100%;
+}
+
+/*드롭다운------------------------------------------- */
+.header-dropdown{
+    position: relative;
+    display: inline-block;
+}
+.header-dropdown .drop-button{
+    background : none;
+    border : none;
+    font-size: 30px;
+    padding-left: 20px;
+    cursor : pointer;
+    color : #fff;
+}
+.header-dropdown .drop-button:hover{
+	color : #AEAEAE;
+}
+
+#drop-content{
+    position: absolute;
+    z-index: 1;
+    margin-top : 15px;
+    right : 70px;
+}
+#drop-content a{
+    display:block;
+    font-size: 15px;
+    background-color: #fff;
+    color: black;
+    text-decoration: none;
+   	padding-left : 10px;
+   	padding-right : 60px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+   box-shadow: 5px 3px 5px rgb(57 63 72 / 30%);
+    width : 100%;
+    cursor: pointer;
+}
+#drop-content a:hover{
+	background: #e1e1e1;
+}
+
+#drop-content a:nth-child(1){
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 1px solid #e1e1e1;
+}
+#drop-content a:nth-last-child(1){
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*모달창 ------------------------------------------------------*/
+.t-modal-container {
+  background: rgba(0,0,0,.5);
+  display: none;
+  
+  /* this is how we cover the entire page */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.t-modal-container.show-modal {
+  display: block;
+}
+
+.t-modal {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 400px;
+}
+

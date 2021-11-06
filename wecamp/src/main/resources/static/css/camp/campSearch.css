@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+#camp-container{
+	padding-left : 8%;
+	padding-right : 8%;
+	
+}
+#camp-container ul{
+	padding-right: 2rem;
+}
+
+#camp-container .toggle-box{
+	padding-bottom: 10px;
+	width:100%;
+	
+}
+
+#camp-container .sigungu-box{
+	padding-bottom: 10px;
+}
+
+#camp-list-container{
+	width: 100%;
+	padding-right: 2%;
+	padding-left : 3%;
+}
+
+/*도,시군구 박스 */
+.do-box{
+	height: 100%;
+	border-right : 1px solid #e1e1e1;
+	box-shadow : 3px 0px 0px 0px #eeeeee;
+
+}
+.do-box > span{
+	color : #FF6B6B;
+}
+.do-list{
+	display: flex;
+}
+.do-list li{
+	margin-left: 8px;
+}
+.sigungu-list{
+	display:flex;
+}
+.sigungu-box{
+
+	
+	padding-left : 30px;
+	padding-right : 50px;
+	height: 100%;
+}
+.sigungu-list li{
+	margin-left : 8px;
+}
+
+/*글씨*/
+.camp-info div{
+	padding-bottom: 4px;
+	font-weight: 400;
+}
+.camp-info .camp-intro{
+	color :  #9999B0;
+	font-size: 1.1rem;
+}
+
+.camp-info .camp-tel{
+	color : #12BDFF;
+}
+.camp-info .camp-title{
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+
+/*이미지 박스 및 안에 내용물 설정*/
+.camp-img-box{
+	width: 320px;
+	height:300px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 15px;
+	box-shadow : 10px 10px 10px -5px rgba(25,42,70,0.2);
+}
+.camp-info{
+	margin-top : 10px;
+	width:320px;
+}
+.camp-inner{
+	display: flex;
+	justify-content: space-around;
+}
+.campsite-list{
+	transform:scale(0.95);  
+	
+	margin-top : 10px;
+	transition: all 0.3s ease-in-out; 
+}
+.campsite-list:hover{
+	cursor : pointer;
+	transform: scale(1.0);
+	
+}
+
+
+/*도, 시군구 선택 라디오 박스*/
+.box-radio-input input[type="radio"]{
+	display : none;
+}
+.box-radio-input input[type="radio"] + span{
+	display: inline-block;
+	background: none;
+	border : 1px solid #dfdfdf;
+	padding : 0px 10px;
+	text-align: center;
+	height: 35px;
+	line-height: 33px;
+	width : 130px;
+	font-size : 0.8rem;
+	font-weight: 500;
+	cursor: pointer;	
+}
+
+.box-radio-input input[type="radio"]:checked + span{
+	border : 1px solid #FF6B6B;
+	background : #FF6B6B;
+	color : #fff;
+}
+
+/*로딩바*/
+.loadingBox .circle{
+	position: fixed;
+	left: 50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	width:100px; 
+	height:100px; 
+	border:10px solid #fff; 
+	border-top:10px solid #FF7E6B; 
+	border-radius:50em;
+	z-index: 100000;
+	
+	animation-name:spinCircle;
+    animation-duration:.8s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+@keyframes spinCircle{
+	from{
+		transform: translate(-50%,-50%) rotate(0);
+	}
+	to{
+		transform : translate(-50%,-50%) rotate(360deg);
+	}
+}
+
+/*고급검색 CSS*/
+#option-box .option-label{
+	font-size : 1.5rem;
+	font-weight: 600;
+}
+#option-box .camp-option{
+	margin-top : 0.5rem;
+	border : 4px solid #e1e1e1;
+	padding : 1rem;
+	border-radius: 10px;
+}
+
+#option-box .option-label{
+	display : inline-block;
+	margin-bottom : 0.5rem;	
+}
+#option-box .camp-type-box label{
+	margin-right: 0.5rem;
+}
+.camp-type-box input{
+	margin-right : 0.2rem;
+}
+
+/*위로가기*/
+.scrollToTop{
+    width:40px;
+    height: 40px;
+    background-image: url('/img/arrow.png');
+    position:fixed;
+    right:10px;
+    bottom:30px;
+    cursor : pointer;
+}
+
+
+

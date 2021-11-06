@@ -1,0 +1,196 @@
+.t-modal-container {
+    background: rgba(0,0,0,.5);
+    display: hidden;
+    
+    /* this is how we cover the entire page */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .t-modal-container.t-show-modal {
+    display: block;
+  }
+ .t-modal {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: 400px;
+    height: 502px;
+    padding : 20px;
+  }
+/*----------------------------------------------------- 모달 input*/
+
+.t-close-btn{
+    background : #fff;
+    border:none;
+    font-size: 20px;
+
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+.t-modal-header{
+	padding-top : 10px;
+    text-align: center;
+    width : 100%;
+    border-bottom: 1px solid #e1e1e1; 
+    padding-bottom: 20px;
+}
+.t-modal-content{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.t-modal-content input{
+    border: none;
+	border: #CCC 1px solid;
+	border-radius: 3px;
+	font-size: 14px;
+	padding : 0 19px;
+	height: 54px;
+    margin-top : 10px;
+}
+
+.login-button{
+    margin-top : 20px;
+	width: 351px;
+	height: 54px;
+	background: #FD4B6E;
+	border: none;
+	color : #fff;
+}
+.login-button:hover{
+	background: #D34049;
+	cursor: pointer;
+}
+
+/*구글 로그인 CSS*/
+.google-btn {
+    margin-top: 20px;
+    width: 351px;
+    height: 42px;
+    background-color: #4285f4;
+    border-radius: 2px;
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);
+    cursor : pointer;
+}
+.google-icon-wrapper {
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #fff;
+    
+}
+.google-icon {
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 11px;
+    width: 18px;
+    height: 18px;
+}
+.btn-text {
+    float: left;
+    margin: 11px 11px 0 0;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    font-weight: 800;
+    margin-left : 50px;
+}
+.google-btn:hover {
+box-shadow: 0 0 6px #4285f4;
+}
+.google-btn:active {
+background: #1669F2;
+}
+  
+/*네이버 로그인 CSS */
+.naver-btn {
+    margin-top: 5px;
+    width: 351px;
+    height: 42px;
+    background-color:#03C75A;
+    border-radius: 2px;
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);
+    cursor : pointer;
+}
+.naver-icon-wrapper {
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #fff;
+    
+}
+.naver-icon {
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 11px;
+    width: 18px;
+    height: 18px;
+}
+.naver-btn:hover {
+box-shadow: 0 0 6px #13C25C;
+}
+.naver-btn:active {
+background: #13C25C;
+}
+
+
+/*네이버 로그인 CSS */
+.kakao-btn {
+    margin-top: 5px;
+    width: 351px;
+    height: 42px;
+    background-color:  #FEE500;
+    border-radius: 2px;
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);
+    cursor : pointer;
+}
+.kakao-icon-wrapper {
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #fff;
+    
+}
+.kakao-icon {
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 11px;
+    width: 18px;
+    height: 18px;
+}
+.kakao-btn:hover {
+	box-shadow: 0 0 6px #CBB700;
+}
+.kakao-btn:active {
+	background:#CBB700;
+}
+
+.inner-wrap{
+	margin-top : 20px;
+	padding : 3px;
+	
+}
+.inner-wrap hr{
+	background : #e1e1e1;
+}
