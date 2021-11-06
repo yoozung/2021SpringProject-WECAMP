@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+#t-navigation{
+
+    width:300px;
+    height : 530px;
+    border-radius: 10px;
+    border-left: 15px solid #212121;
+    background : #212121;
+    transition: 0.3s;
+}
+
+#t-navigation .t-nav-ul{
+
+    width: 100%;
+    padding-left: 5px;
+    padding-top : 60px;
+}
+#t-navigation .t-nav-ul .t-list{
+    /*position: relative;*/
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+#t-navigation .t-nav-ul .t-list.active{
+    background : #fff;
+}
+
+#t-navigation .t-nav-ul .t-list > .t-anchor{
+    /*position: relative;*/
+    display: block;
+    width: 100%;
+    display: flex;
+    color : #fff;
+    align-items: center;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+#t-navigation .t-nav-ul .t-list.active > .t-anchor{
+    color: #333;
+}
+
+#t-navigation .t-nav-ul .t-list > .t-anchor .t-icon{
+    /*position: relative;*/
+    display: block;
+    min-width: 60px;
+    height: 60px; 
+    text-align: center;
+    line-height: 70px;
+}
+#t-navigation .t-nav-ul .t-list > .t-anchor .t-icon ion-icon{
+    font-size: 1.5em;
+}
+#t-navigation .t-nav-ul .t-list > .t-anchor .t-title{
+    display: block;
+    padding-left: 10px;
+    height: 60px;   
+    white-space: normal;
+    text-align: center;
+    line-height: 62px;
+}
+/*-------------------------------------------------------------*/
+
+.item.item1 h2{
+	text-align: left;
+}
+
+/*위로가기*/
+.scrollToTop{
+    width:40px;
+    height: 40px;
+    background-image: url('/img/arrow.png');
+    position:fixed;
+    right:10px;
+    bottom:30px;
+    cursor : pointer;
+}
+

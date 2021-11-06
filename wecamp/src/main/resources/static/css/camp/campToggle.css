@@ -1,0 +1,307 @@
+@charset "UTF-8";
+
+/* 지역검색, 고급검색 */
+  .answer {
+    display: none;
+    padding-bottom: 30px;
+  }
+  #faq-title {
+    font-size: 25px;
+  }
+  .faq-content {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .question {
+    font-size: 19px;
+    padding: 20px 0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+  }
+  .question:hover {
+    color: #2962ff;
+  }
+  [id$="-toggle"] {
+    margin-right: 15px;
+  }
+  .t-box{
+  	display: flex;
+  
+  	
+  }
+  
+  /*검색박스*/
+  
+.search-container{
+	 	display : flex;
+	 	justify-content: center;
+	 	align-items: center;
+ }
+.search-box{
+	 background: #fff;
+	 height: 50px;
+	 border-radius: 40px;
+	 padding : 10px;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 border : 1px solid #e1e1e1;
+  
+}
+.search-btn{
+	  color : #fff;
+	  float : right;
+	  width : 40px;
+	  height: 40px;
+	  border-radius: 50%;
+	  background: #FF6B6B;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+}
+    
+.search-txt{
+	  border: none;
+	  background: none;
+	  outline: none;
+	  float : left;
+	  padding: 0;
+	  color : black;
+	  font-size : 16px;
+	  transition: 0.4s;
+	  line-height: 30px;
+	  width : 300px;
+}
+.search-box:hover > .search-txt{
+		width : 330px;
+		height: 55px;
+}
+
+
+#camp-search-btn{
+  background:#FD4B6E;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+#camp-search-btn:hover{
+  background:#fff;
+  color:#FD4B6E;
+}
+#camp-search-btn:before,#camp-search-btn:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #FD4B6E;
+  transition:400ms ease all;
+}
+#camp-search-btn:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+#camp-search-btn:hover:before,#camp-search-btn:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.camp-type-box input[type="checkbox"]{
+	width:14px;
+	height : 14px;
+}
+
+
+
+/*페이징 버튼*/
+.paging-box{
+	border-top : 1px solid #e1e1e1;
+	padding-top : 2rem;
+	padding-bottom : 3rem;
+	padding-left:2rem;
+	display: flex;	
+	justify-content: center;
+	font-size : 1.3rem;
+	width:100%;
+
+}
+.paging-box span{
+	display: inline-block;
+	width : 50px;
+	height: 50px;	
+	border:1px solid #e1e1e1;
+	text-align: center;
+	line-height: 50px;
+	color : #5B646E;
+	margin: 0.3rem;
+}
+.paging-box span:hover {
+	border : 1px solid #FF6B6B;
+	background: #FF6B6B;
+	cursor: pointer;
+	color : white;
+}
+
+.paging-box #current-page{
+	border : 1px solid #FF6B6B;
+	color : white;
+	background: #FF6B6B;
+}
+
+/*날씨 카드 */
+
+.weather-box{
+	
+	display: flex;
+	justify-content: center;
+}
+
+
+.weather {
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(238, 237, 237, 0.438);
+    color: rgb(105, 104, 104);
+}
+
+.weather-container {
+    width: fit-content;
+}
+
+.card {
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    border-color: rgba(238, 237, 237, 0.438);
+    box-shadow: 5px 8px 10px #80808033;
+}
+
+@media(max-width:767px) {
+    .card {
+        height: 8rem;
+        padding: 1.5rem 1.5rem 1rem 1.5rem
+    }
+}
+
+.carousel-indicators li {
+    width: 5px;
+    height: 6px;
+    border-radius: 100%;
+    opacity: 0.2;
+    background-color: #000000
+}
+
+.carousel-indicators {
+    margin-bottom: 0
+}
+
+.temp {
+    font-size: 5rem;
+    color: rgb(57, 57, 58)
+}
+
+.card-1 {
+    background: linear-gradient(to bottom, #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%);
+}
+
+@media(max-width:767px) {
+    .temp {
+        font-size: 3rem
+    }
+}
+
+.location {
+    margin-bottom: 1.5rem
+}
+
+@media(max-width:767px) {
+    .location {
+        font-size: 0.75rem
+    }
+}
+
+.img-fluid {
+    float: right;
+    width: 65%;
+    display: flex;
+    align-items: center
+}
+
+.row2 .img-fluid {
+    margin: 10% 0;
+    opacity: 0.5;
+    width: 70%
+}
+
+.card-2 .row {
+    justify-content: center
+}
+
+.card-3 .row {
+    justify-content: center
+}
+
+.row1 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: black
+}
+
+.row3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color : #3B4148;
+    
+}
+
+@media(max-width:400px) {
+    .row3 {
+        font-size: 0.7rem;
+        font-weight: bold;
+        color: black
+    }
+}
+
+@media(max-width:320px) {
+    .row3 {
+        font-size: 0.6rem;
+        font-weight: bold;
+        color: black
+    }
+}
+
+.row4 {
+    font-size: 0.6rem;
+    color: rgb(196, 196, 196);
+    margin: 5% 0 2.5rem
+}
+
+.card-3 .row3 {
+    margin: 5% 0 2.5rem
+}
+
+.col {
+    overflow: visible
+}
+
+.row {
+    overflow: visible
+}
+.temp{
+	width : 400px;
+}
+

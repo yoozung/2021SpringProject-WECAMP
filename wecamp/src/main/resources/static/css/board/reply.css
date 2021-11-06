@@ -1,0 +1,144 @@
+
+@font-face {
+  font-family: 'reply';
+  src: url('/css/board/font/reply.eot?78487379');
+  src: url('/css/board/font/reply.eot?78487379#iefix') format('embedded-opentype'),
+       url('/css/board/font/reply.woff2?78487379') format('woff2'),
+       url('/css/board/font/reply.woff?78487379') format('woff'),
+       url('/css/board/font/reply.ttf?78487379') format('truetype'),
+       url('/css/board/font/reply.svg?78487379#reply') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'reply';
+    src: url('../font/reply.svg?78487379#reply') format('svg');
+  }
+}
+*/
+/*-----------------------------------------------------------*/
+#t-navigation{
+
+    width:300px;
+    height : 530px;
+    border-radius: 10px;
+    border-left: 15px solid #212121;
+    background : #212121;
+    transition: 0.3s;
+    float:left;
+    margin-left: 6.5rem;
+    margin-top : 6rem;
+}
+
+#t-navigation .t-nav-ul{
+
+    width: 100%;
+    padding-left: 5px;
+    padding-top : 60px;
+}
+#t-navigation .t-nav-ul .t-list{
+    /*position: relative;*/
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+#t-navigation .t-nav-ul .t-list.active{
+    background : #fff;
+}
+
+#t-navigation .t-nav-ul .t-list > .t-anchor{
+    /*position: relative;*/
+    display: block;
+    width: 100%;
+    display: flex;
+    color : #fff;
+    align-items: center;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+#t-navigation .t-nav-ul .t-list.active > .t-anchor{
+    color: #333;
+}
+
+#t-navigation .t-nav-ul .t-list > .t-anchor .t-icon{
+    /*position: relative;*/
+    display: block;
+    min-width: 60px;
+    height: 25px; 
+    text-align: center;
+    line-height: 70px;
+}
+#t-navigation .t-nav-ul .t-list > .t-anchor .t-icon ion-icon{
+    font-size: 1.5em;
+}
+#t-navigation .t-nav-ul .t-list > .t-anchor .t-title{
+    display: block;
+    padding-left: 10px;
+    height: 60px;   
+    white-space: normal;
+    text-align: center;
+    line-height: 62px;
+}
+/*-------------------------------------------------------------*/
+
+.item.item1 h2{
+   text-align: left;
+}
+
+#main .main-container{
+   display : flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+
+.ccontainer{
+   width:900px!important;
+   margin-left:35rem;
+}
+
+
+
+/*-----------------------------------------------------------*/
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "reply";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-commenting:before { content: '\f27a'; } /* '' */
+.icon-commenting-o:before { content: '\f27b'; } /* '' */
