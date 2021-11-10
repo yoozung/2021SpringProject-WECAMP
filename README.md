@@ -3,12 +3,16 @@ WECAMP
 
 <br>
 <br>
+
 ## 프로젝트기간
 2021.10.13 ~ 2021.11.05
+
+<br>
 
 ## 시연영상 
 -,.-
 
+<br>
 
 ## 개발환경
 ### IDE
@@ -46,17 +50,34 @@ WECAMP
 |Openweather|날씨API|
 
 
+<br>
+
 ## 화면구성
 https://ovenapp.io/view/BoHZcBymXMHAbli3tSFhw1usIEwqosAi/
+
+<br>
 
 ## 주제 (주제선정배경, 내용)
 `코로나19로 인해 밀폐된 실내공간보다는 야외활동을 선호하게 되며 캠핑이 주목받게 되었습니다.`
 
+<br>
+
 ## 개발목표
+
+<br>
 
 
 ## 아키텍쳐
 
+<br>
 
-## er다이어그램
-## usercaseDiagram
+## SRS
+
+<br>
+
+## ERDiagram
+<img src="https://user-images.githubusercontent.com/83578464/141108164-25b1a8b8-1053-4940-8ce5-a6d0c48694da.png">
+
+<br>
+
+## usecaseDiagram
