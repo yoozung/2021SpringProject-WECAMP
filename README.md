@@ -76,7 +76,7 @@ https://ovenapp.io/view/BoHZcBymXMHAbli3tSFhw1usIEwqosAi/
 <br>
 
 ## ERD
-[erd.pdf](https://github.com/yoozung/WECAMP-Spring-Project/files/7512555/erd.pdf)
+https://github.com/yoozung/WECAMP-Spring-Project/wiki/ERD
 
 
 <br>
