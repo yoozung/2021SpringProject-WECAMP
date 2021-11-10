@@ -10,7 +10,7 @@ WECAMP
 <br>
 
 ## 시연영상 
--,.-
+만들어야됨
 
 <br>
 
@@ -18,15 +18,15 @@ WECAMP
 ### IDE
 |name|version|
 |------|---|
-|SpringBoot(Maven)|확인해보기|
-|SQL DEveloper||
-|Visual Studio Code|
+|SpringBoot(Maven)|4.10.0|
+|SQL DEveloper|11.2.0.2.0|
+|Visual Studio Code||
 
 
 ### Java
 |name|version|
 |------|---|
-|SpringBoot(Maven)||
+|SpringBoot(Maven)|4.10.0|
 |Spring Security||
 |JPA||
 |MySQL|8.0.21|
@@ -53,7 +53,7 @@ WECAMP
 <br>
 
 ## 화면구성
-https://ovenapp.io/view/BoHZcBymXMHAbli3tSFhw1usIEwqosAi/
+[UI](https://ovenapp.io/view/BoHZcBymXMHAbli3tSFhw1usIEwqosAi/)
 
 <br>
 
@@ -76,10 +76,10 @@ https://ovenapp.io/view/BoHZcBymXMHAbli3tSFhw1usIEwqosAi/
 <br>
 
 ## ERD
-https://github.com/yoozung/WECAMP-Spring-Project/wiki/ERD
+[ERD](https://github.com/yoozung/WECAMP-Spring-Project/wiki/ERD)
 
 
 <br>
 
 ## UsecaseDiagram
-[usecase.pdf](https://github.com/yoozung/WECAMP-Spring-Project/files/7512497/usecase.pdf)
+[UsecaseDiagram](https://github.com/yoozung/WECAMP-Spring-Project/wiki/Usecase-Diagram)
