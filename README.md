@@ -3,27 +3,60 @@ WECAMP
 
 <br>
 <br>
+## 프로젝트기간
+2021.10.13 ~ 2021.11.05
 
 ## 시연영상 
 -,.-
 
-## 발표자료
 
 ## 개발환경
+### IDE
 |name|version|
 |------|---|
 |SpringBoot(Maven)|확인해보기|
-|JDK|1.8|
-|Tomcat|8.5|
+|SQL DEveloper||
+|Visual Studio Code|
+
+
+### Java
+|name|version|
+|------|---|
+|SpringBoot(Maven)||
+|Spring Security||
+|JPA||
 |MySQL|8.0.21|
 |Mybatis|-|
+
+### Front
+|name|version|
+|------|---|
+|JavaScript||
+|JQuery||
+|Ajax|| 
+
+### API
+|name|version|
+|------|---|
+|한국관광공사|고캠핑정보|
+|카카오|지도API|
+|카카오|로그인API|
+|네이버|로그인API|
+|구글|로그인API|
+|Openweather|날씨API|
+
 
 ## 화면구성
 https://ovenapp.io/view/BoHZcBymXMHAbli3tSFhw1usIEwqosAi/
 
 ## 주제 (주제선정배경, 내용)
+`코로나19로 인해 밀폐된 실내공간보다는 야외활동을 선호하게 되며 캠핑이 주목받게 되었습니다.`
 
 ## 개발목표
+
+
 ## 아키텍쳐
+
+
 ## er다이어그램
 ## usercaseDiagram
