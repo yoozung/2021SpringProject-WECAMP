@@ -75,9 +75,11 @@ https://ovenapp.io/view/BoHZcBymXMHAbli3tSFhw1usIEwqosAi/
 
 <br>
 
-## ERDiagram
-<img src="https://user-images.githubusercontent.com/83578464/141108164-25b1a8b8-1053-4940-8ce5-a6d0c48694da.png">
+## ERD
+[erd.pdf](https://github.com/yoozung/WECAMP-Spring-Project/files/7512555/erd.pdf)
+
 
 <br>
 
-## usecaseDiagram
+## UsecaseDiagram
+[usecase.pdf](https://github.com/yoozung/WECAMP-Spring-Project/files/7512497/usecase.pdf)
