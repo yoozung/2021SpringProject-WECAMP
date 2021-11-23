@@ -1,8 +1,6 @@
 WECAMP
 =========
 
-<br>
-
 ## 프로젝트기간
 2021.10.13 ~ 2021.11.05
 
@@ -55,12 +53,11 @@ WECAMP
 ## 화면구성
 [UI](https://ovenapp.io/view/BoHZcBymXMHAbli3tSFhw1usIEwqosAi/)
 
-<br>
 
 ## SRS
 [SRS](https://github.com/yoozung/WECAMP-Spring-Project/wiki/SRS)
 
-<br>
+
 
 ## UsecaseDiagram
 [UsecaseDiagram](https://github.com/yoozung/WECAMP-Spring-Project/wiki/Usecase-Diagram)
