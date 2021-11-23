@@ -57,29 +57,6 @@ WECAMP
 
 <br>
 
-## 주제 (주제선정배경, 내용)
-`코로나19로 인해 밀폐된 실내공간보다는 야외활동을 선호하게 되며 캠핑이 주목받게 되었습니다.`
-
-<br>
-
-## 개발목표
-
-<br>
-
-
-## 아키텍쳐
-
-<br>
-
-## SRS
-
-<br>
-
-## ERD
-[ERD](https://github.com/yoozung/WECAMP-Spring-Project/wiki/ERD)
-
-
-<br>
 
 ## UsecaseDiagram
 [UsecaseDiagram](https://github.com/yoozung/WECAMP-Spring-Project/wiki/Usecase-Diagram)
