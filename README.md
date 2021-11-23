@@ -66,5 +66,5 @@ WECAMP
 [UsecaseDiagram](https://github.com/yoozung/WECAMP-Spring-Project/wiki/Usecase-Diagram)
 
 ## DB Modeling
-[DB](https://github.com/yoozung/WECAMP-Spring-Project/wiki/Usecase-Diagram)
+[DB](https://github.com/yoozung/WECAMP-Spring-Project/wiki/ERD)
 
