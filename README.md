@@ -10,7 +10,7 @@ WECAMP
 <br>
 
 ## 시연영상 
--
+- [ Link ] (https://www.youtube.com/watch?v=4G6xfphe4-w)
 
 <br>
 
