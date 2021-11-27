@@ -60,8 +60,8 @@ WECAMP
 
 
 ## UsecaseDiagram
-[UsecaseDiagram](https://github.com/yoozung/WECAMP-Spring-Project/wiki/Usecase-Diagram)
+[UsecaseDiagram](https://github.com/yoozung/2021SpringProject-WECAMP/wiki/UsecaseDiagram)
 
 ## DB Modeling
-[DB](https://github.com/yoozung/WECAMP-Spring-Project/wiki/ERD)
+[DB](https://github.com/yoozung/2021SpringProject-WECAMP/wiki/ERD)
 
