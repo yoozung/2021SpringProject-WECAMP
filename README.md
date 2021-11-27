@@ -18,7 +18,7 @@ WECAMP
 |name|version|
 |------|---|
 |SpringBoot(Maven)|4.10.0|
-|SQL DEveloper|11.2.0.2.0|
+|SQL Developer|11.2.0.2.0|
 |Visual Studio Code||
 
 
