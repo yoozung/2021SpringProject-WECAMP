@@ -55,7 +55,7 @@ WECAMP
 
 
 ## SRS
-[SRS](https://github.com/yoozung/WECAMP-Spring-Project/wiki/SRS)
+[SRS](https://github.com/yoozung/2021SpringProject-WECAMP/wiki/SRS)
 
 
 
