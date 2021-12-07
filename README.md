@@ -1,17 +1,13 @@
 WECAMP
 =========
 
+<img width="600" src="https://user-images.githubusercontent.com/83578464/143013319-5d9b8158-afc6-4892-9849-1246b1f22afd.jpg">
+
 ## 프로젝트기간
 2021.10.13 ~ 2021.11.05
 
 <br>
 
-## 시연영상 
-[Link](https://www.youtube.com/watch?v=4G6xfphe4-w)  
-
-<img width="600" src="https://user-images.githubusercontent.com/83578464/143013319-5d9b8158-afc6-4892-9849-1246b1f22afd.jpg">
-
-<br>
 
 ## 개발환경
 ### IDE
