@@ -3,6 +3,8 @@ WECAMP
 
 <img width="600" src="https://user-images.githubusercontent.com/83578464/143013319-5d9b8158-afc6-4892-9849-1246b1f22afd.jpg">
 
+[시연영상](https://www.youtube.com/watch?v=4G6xfphe4-w)
+
 ## 프로젝트기간
 2021.10.13 ~ 2021.11.05
 
@@ -10,26 +12,13 @@ WECAMP
 
 
 ## 개발환경
-### IDE
 |name|version|
 |------|---|
-|SpringBoot(Maven)|4.10.0|
+|SpringToolSuite4||
+|SpringBoot|4.10.0|
 |SQL Developer|11.2.0.2.0|
-|Visual Studio Code||
-
-
-### Java
-|name|version|
-|------|---|
-|SpringBoot(Maven)|4.10.0|
-|Spring Security||
-|JPA||
+|VS Code||
 |MySQL|8.0.21|
-|Mybatis|-|
-
-### Front
-|name|version|
-|------|---|
 |JavaScript||
 |JQuery||
 |Ajax|| 
